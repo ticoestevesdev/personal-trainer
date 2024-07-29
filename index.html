@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="Copyright Tico Esteves" />
+    <meta name="description" content="Site criado em HTML, CSS e JavaScript para divulgar o trabalho do programador Front-end Tico Esteves"/>
+    <meta name="keywords" content="personal trainer, academia, treinamento, musculação, aula particular, treinador">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Página de Vendas - Personal Trainer</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#about">
+                    <img src="./assets/img/logo.png" alt="Logotipo" />
+                </a>
+            </div>
+            <div class="menu__header">
+                <ul>
+                    <li><a href="#about">Home</a></li>
+                    <li><a href="#skills">Sobre</a></li>
+                    <li><a href="#depositions">depoimentos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+            <label for="show__menu__mobile" class="show__menu">&#9776;</label>
+            <input type="checkbox" name="show__menu__mobile" id="show__menu__mobile">
+            <div class="menu__mobile">
+                <ul>
+                    <label for="show__menu__mobile" class="hide__menu">&#10006;</label>
+                    <li><a href="#about">Home</a></li>
+                    <li><a href="#skills">Sobre</a></li>
+                    <li><a href="#depositions">depoimentos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="about">
+            <div class="content">
+                <div class="left">
+                    <img src="./assets/img/about-mobile.jpg" alt="" class="img__about__mobile" />
+                    <h3>A decisão de mudar a sua história está a um 
+                        clique de distância!</h3>
+                        <p>
+                            Aprenda a treinar do jeito certo, de forma
+                            segura e em pouco tempo.
+                        </p>
+                        <a href="" onclick="hello();">&#9990; Agende seu treino</a>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="skills">
+            <h3>Para quem é o treinamento?</h3>
+            <div class="content">
+                <div class="card">
+                    <img src="./assets/img/user.png" alt="">
+                    Para quem não aguenta mais chegar na academia e não ter a 
+                    atenção do professor.
+                </div>
+                <div class="card">
+                    <img src="./assets/img/clipboard.png" alt="">
+                    Para quem sente que já tentou todo tipo de treino, mas não 
+                    consegue ver resultado.
+                </div>
+                <div class="card">
+                    <img src="./assets/img/clock.png" alt="" />
+                    Para quem quer ter resultados reais, com treinos rápidos e de alta 
+                    intensidade.
+                </div>
+            </div>
+        </section>
+        <section id="first__step" class="first__step">
+            <div class="content">                 
+                <div class="left">
+                </div>
+                <div class="right">
+                    <h3>Dê o primeiro passo</h3>
+                    <p>
+                        Tenha acesso as melhores metodologias e técnicas de treinamento 
+                        para promover saúde, bem estar, qualidade de vida, performance 
+                        física e estética.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="depositions" class="depositions">
+            <h3>Depoimentos</h3>
+            <div class="content">
+                <div class="card">
+                    <img src="./assets/img/user.png" alt="">
+                    <h5>Larissa Silva</h5>
+                    <p>
+                        Sempre tive muita preguiça para treinar, mas com o 
+                        treinamento comecei a ter mais disposição e consigo 
+                        acompanhar minha evolução!
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/user.png" alt="">
+                    <h5>Fernando Ramos</h5>
+                    <p>
+                        Durante muitos anos fiquei sem treinar e achava que nunca 
+                        conseguiria voltar, mas com o treinamento estou tendo 
+                        resultados rápidos e estou muito empolgado!
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/user.png" alt="">
+                    <h5>Mariana Fernadez</h5>
+                    <p>
+                        Sempre fui sedentária, mas com o treinamento tudo mudou! 
+                        Estou muito feliz com os resultados e minha forma física 
+                        nunca esteve tão bem!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="content">
+                <div class="left">
+                    <h3>Contato</h3>
+                    Este é um layout construído em HTML, CSS e JavaScript. 
+                    <h4>Quer ter um site assim?</h4>
+                    <p>
+                        Entre em contato através do formulário, do blog ou de uma de 
+                        minhas redes sociais abaixo:
+                    </p>
+                    <a href="https://www.instagram.com/ticoestevesofc/" target="_blank">
+                        <img src="./assets/img/instagram.png" alt="">
+                    </a>
+                    <a href="https://github.com/ticoestevesdev/" target="_blank">
+                        <img src="./assets/img/github.png" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/ticoestevesdev/" target="_blank">
+                        <img src="./assets/img/linkedin.png" alt="">
+                    </a>
+                </div>
+                <div class="right">
+                    <form action=" https://formspree.io/f/xdovkvjj" method="post">
+                        <fieldset>
+                            <legend>Contato</legend>
+                            <label for="name">Nome:</label>
+                            <input 
+                                type="text" 
+                                name="name" 
+                                id="name"
+                                placeholder="Digite seu nome..."
+                                required
+                            />
+                            <label for="email">E-mail</label>
+                            <input 
+                                type="email" 
+                                name="email" 
+                                id="email"
+                                placeholder="Digite seu e-mail..."
+                                required
+                            />
+                            <label for="message">Sua Mensagem:</label>
+                            <textarea 
+                                name="message" 
+                                id="message" 
+                                rows="10"
+                                required
+                            ></textarea>
+                            <button type="submit" onClick="verify();">Enviar</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="content">
+                <div class="copy">
+                    &#169; 2023 <a href="#about">Personal Training</a> | Todos os direitos reservados<br>
+                    Por <a href="https://ticoesteves.hgpage.com.br/" target="_blank">Tico Esteves</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
